@@ -1,0 +1,16 @@
+name: hello-tolya
+
+on: push
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: echo Hello, Tolya
+      run: make say-hello
+
